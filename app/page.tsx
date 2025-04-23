@@ -9,7 +9,7 @@ export default async function Home() {
   return (
     <>
       <AuthButton />
-      <pre>{JSON.stringify(tweets, null, 2)}</pre>;
+      <pre>{JSON.stringify(tweets, null, 2)}</pre>
     </>
   );
 }
