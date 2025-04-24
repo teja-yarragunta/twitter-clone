@@ -3,7 +3,6 @@ import { cookies } from "next/headers";
 import AuthButtonServer from "./auth-button-server";
 import { redirect } from "next/navigation";
 import NewTweet from "./new-tweet";
-import Likes from "./likes";
 import Tweets from "./tweets";
 
 export default async function Home() {

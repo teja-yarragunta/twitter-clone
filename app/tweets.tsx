@@ -32,7 +32,7 @@ export default function Tweets({ tweets }: { tweets: TweetWithAuthor[] }) {
           schema: "public",
           table: "tweets",
         },
-        (payload) => {
+        () => {
           router.refresh();
         }
       )

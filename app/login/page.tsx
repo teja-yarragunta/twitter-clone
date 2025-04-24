@@ -1,7 +1,6 @@
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import AuthButtonClient from "../auth-button-client";
 import GitHubButton from "./github-button";
 
 export default async function Login() {
@@ -10,7 +9,6 @@ export default async function Login() {
   const {
     data: { session },
   } = await supabase.auth.getSession();
-  const { data: tweets } = await supabase.from("tweets").select();
 
   if (session) {
     redirect("/");
